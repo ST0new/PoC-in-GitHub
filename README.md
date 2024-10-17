@@ -436,6 +436,7 @@
 - [sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass](https://github.com/sxyrxyy/CVE-2024-1709-ConnectWise-ScreenConnect-Authentication-Bypass)
 - [cjybao/CVE-2024-1709-and-CVE-2024-1708](https://github.com/cjybao/CVE-2024-1709-and-CVE-2024-1708)
 - [AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-](https://github.com/AhmedMansour93/Event-ID-229-Rule-Name-SOC262-CVE-2024-1709-)
+- [AMRICHASFUCK/Mass-CVE-2024-1709](https://github.com/AMRICHASFUCK/Mass-CVE-2024-1709)
 
 ### CVE-2024-1781 (2024-02-23)
 
@@ -1394,6 +1395,13 @@
 ### CVE-2024-6769
 - [fortra/CVE-2024-6769](https://github.com/fortra/CVE-2024-6769)
 
+### CVE-2024-6778 (2024-07-16)
+
+<code>Race in DevTools in Google Chrome prior to 126.0.6478.182 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)
+</code>
+
+- [ading2210/CVE-2024-6778-POC](https://github.com/ading2210/CVE-2024-6778-POC)
+
 ### CVE-2024-6782 (2024-08-06)
 
 <code>Improper access control in Calibre 6.9.0 ~ 7.14.0 allow unauthenticated attackers to achieve remote code execution.
@@ -2196,6 +2204,8 @@
 
 - [OxLmahdi/cve-2024-23113](https://github.com/OxLmahdi/cve-2024-23113)
 - [CheckCve2/CVE-2024-23113](https://github.com/CheckCve2/CVE-2024-23113)
+- [HazeLook/CVE-2024-23113](https://github.com/HazeLook/CVE-2024-23113)
+- [maybelookis/CVE-2024-23113](https://github.com/maybelookis/CVE-2024-23113)
 
 ### CVE-2024-23208 (2024-01-23)
 
@@ -2606,6 +2616,27 @@
 - [sviim/ClearML-CVE-2024-24590-RCE](https://github.com/sviim/ClearML-CVE-2024-24590-RCE)
 - [Bigb972003/cve-2024-24590](https://github.com/Bigb972003/cve-2024-24590)
 - [j3r1ch0123/CVE-2024-24590](https://github.com/j3r1ch0123/CVE-2024-24590)
+
+### CVE-2024-24684 (2024-05-28)
+
+<code>Multiple stack-based buffer overflow vulnerabilities exist in the readOFF functionality of libigl v2.5.0. A specially crafted .off file can lead to stack-based buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.This vulnerability concerns the header parsing occuring while processing an `.off`  file via the `readOFF` function. \r\n\r\n\r\nWe can see above that at [0] a stack-based buffer called `comment` is defined with an hardcoded size of `1000 bytes`.  The call to `fscanf` at [1] is unsafe and if the first line of the header of the `.off` files is longer than 1000 bytes it will overflow the `header` buffer.
+</code>
+
+- [SpiralBL0CK/CVE-2024-24684](https://github.com/SpiralBL0CK/CVE-2024-24684)
+
+### CVE-2024-24685 (2024-05-28)
+
+<code>Multiple stack-based buffer overflow vulnerabilities exist in the readOFF functionality of libigl v2.5.0. A specially crafted .off file can lead to stack-based buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.This vulnerability concerns the parsing of comments within the vertex section of an `.off`  file processed via the `readOFF` function.
+</code>
+
+- [SpiralBL0CK/CVE-2024-24685](https://github.com/SpiralBL0CK/CVE-2024-24685)
+
+### CVE-2024-24686 (2024-05-28)
+
+<code>Multiple stack-based buffer overflow vulnerabilities exist in the readOFF functionality of libigl v2.5.0. A specially crafted .off file can lead to stack-based buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.This vulnerability concerns the parsing of comments within the faces section of an `.off`  file processed via the `readOFF` function.
+</code>
+
+- [SpiralBL0CK/CVE-2024-24686](https://github.com/SpiralBL0CK/CVE-2024-24686)
 
 ### CVE-2024-24760 (2024-02-02)
 
@@ -3554,6 +3585,13 @@
 - [Admin9961/CVE-2024-30088](https://github.com/Admin9961/CVE-2024-30088)
 - [Justintroup85/exploits-forsale-collateral-damage](https://github.com/Justintroup85/exploits-forsale-collateral-damage)
 
+### CVE-2024-30090 (2024-06-11)
+
+<code>Microsoft Streaming Service Elevation of Privilege Vulnerability
+</code>
+
+- [Dor00tkit/CVE-2024-30090](https://github.com/Dor00tkit/CVE-2024-30090)
+
 ### CVE-2024-30212 (2024-05-28)
 
 <code>If a SCSI READ(10) command is initiated via USB using the largest LBA \n(0xFFFFFFFF) with it's default block size of 512 and a count of 1,\n\nthe first 512 byte of the 0x80000000 memory area is returned to the \nuser. If the block count is increased, the full RAM can be exposed.\n\nThe same method works to write to this memory area. If RAM contains \npointers, those can be - depending on the application - overwritten to\n\nreturn data from any other offset including Progam and Boot Flash.
@@ -4450,6 +4488,7 @@
 - [Kayiyan/CVE-2024-37084-Poc](https://github.com/Kayiyan/CVE-2024-37084-Poc)
 - [vuhz/CVE-2024-37084](https://github.com/vuhz/CVE-2024-37084)
 - [Ly4j/CVE-2024-37084-Exp](https://github.com/Ly4j/CVE-2024-37084-Exp)
+- [A0be/CVE-2024-37084-Exp](https://github.com/A0be/CVE-2024-37084-Exp)
 
 ### CVE-2024-37085 (2024-06-25)
 
@@ -4952,12 +4991,30 @@
 
 - [nidhihcl75/frameworks_av_AOSP10_r33_CVE-2024-40658](https://github.com/nidhihcl75/frameworks_av_AOSP10_r33_CVE-2024-40658)
 
+### CVE-2024-40662 (2024-09-11)
+
+<code>In scheme of Uri.java, there is a possible way to craft a malformed Uri object due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
+</code>
+
+- [Aakashmom/net_G2.5_CVE-2024-40662](https://github.com/Aakashmom/net_G2.5_CVE-2024-40662)
+
+### CVE-2024-40673
+- [Aakashmom/G3_libcore_native_CVE-2024-40673](https://github.com/Aakashmom/G3_libcore_native_CVE-2024-40673)
+
+### CVE-2024-40675
+- [Aakashmom/intent_CVE-2024-40675](https://github.com/Aakashmom/intent_CVE-2024-40675)
+
+### CVE-2024-40676
+- [Aakashmom/frameworks_base_accounts_CVE-2024-40676](https://github.com/Aakashmom/frameworks_base_accounts_CVE-2024-40676)
+- [Aakashmom/accounts_CVE-2024-40676-](https://github.com/Aakashmom/accounts_CVE-2024-40676-)
+
 ### CVE-2024-40711 (2024-09-07)
 
 <code>A deserialization of untrusted data vulnerability with a malicious payload can allow an unauthenticated remote code execution (RCE).
 </code>
 
 - [watchtowrlabs/CVE-2024-40711](https://github.com/watchtowrlabs/CVE-2024-40711)
+- [realstatus/CVE-2024-40711-Exp](https://github.com/realstatus/CVE-2024-40711-Exp)
 
 ### CVE-2024-40725 (2024-07-18)
 
@@ -5400,6 +5457,7 @@
 - [gumerzzzindo/CVE-2024-47176](https://github.com/gumerzzzindo/CVE-2024-47176)
 - [MalwareTech/CVE-2024-47176-Scanner](https://github.com/MalwareTech/CVE-2024-47176-Scanner)
 - [AxthonyV/CVE-2024-47176](https://github.com/AxthonyV/CVE-2024-47176)
+- [gianlu335/CUPS-CVE-2024-47176](https://github.com/gianlu335/CUPS-CVE-2024-47176)
 
 ### CVE-2024-47177
 - [referefref/cupspot-2024-47177](https://github.com/referefref/cupspot-2024-47177)
@@ -7457,6 +7515,13 @@
 
 - [emad-almousa/CVE-2023-22074](https://github.com/emad-almousa/CVE-2023-22074)
 
+### CVE-2023-22098 (2023-10-17)
+
+<code>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).  Supported versions that are affected are Prior to 7.0.12. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  While the vulnerability is in Oracle VM VirtualBox, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. Note: Only applicable to 7.0.x platform. CVSS 3.1 Base Score 8.2 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H).
+</code>
+
+- [Diego-AltF4/CVE-2023-22098](https://github.com/Diego-AltF4/CVE-2023-22098)
+
 ### CVE-2023-22432 (2023-03-05)
 
 <code>Open redirect vulnerability exists in web2py versions prior to 2.23.1. When using the tool, a web2py user may be redirected to an arbitrary website by accessing a specially crafted URL. As a result, the user may become a victim of a phishing attack.
@@ -8078,6 +8143,9 @@
 </code>
 
 - [glefait/CVE-2023-25355-25356](https://github.com/glefait/CVE-2023-25355-25356)
+
+### CVE-2023-25581
+- [p33d/CVE-2023-25581](https://github.com/p33d/CVE-2023-25581)
 
 ### CVE-2023-25610
 - [qi4L/CVE-2023-25610](https://github.com/qi4L/CVE-2023-25610)
@@ -10117,6 +10185,7 @@
 </code>
 
 - [Thampakon/CVE-2023-35674](https://github.com/Thampakon/CVE-2023-35674)
+- [SpiralBL0CK/Guide-and-theoretical-code-for-CVE-2023-35674](https://github.com/SpiralBL0CK/Guide-and-theoretical-code-for-CVE-2023-35674)
 
 ### CVE-2023-35687 (2023-09-11)
 
@@ -10739,6 +10808,7 @@
 - [classic130/CVE-2023-38408](https://github.com/classic130/CVE-2023-38408)
 - [wxrdnx/CVE-2023-38408](https://github.com/wxrdnx/CVE-2023-38408)
 - [mrtacojr/CVE-2023-38408](https://github.com/mrtacojr/CVE-2023-38408)
+- [fazilbaig1/cve_2023_38408_scanner](https://github.com/fazilbaig1/cve_2023_38408_scanner)
 
 ### CVE-2023-38434 (2023-07-18)
 
@@ -10938,6 +11008,8 @@
 - [ra3edAJ/LAB-DFIR-cve-2023-38831](https://github.com/ra3edAJ/LAB-DFIR-cve-2023-38831)
 - [technicalcorp0/CVE-2023-38831-Exploit](https://github.com/technicalcorp0/CVE-2023-38831-Exploit)
 - [idkwastaken/CVE-2023-38831](https://github.com/idkwastaken/CVE-2023-38831)
+- [vilonachan/CVE-2023-38831-Winrar-Exploit-Generator-POC](https://github.com/vilonachan/CVE-2023-38831-Winrar-Exploit-Generator-POC)
+- [vilonachan/CVE-2023-38831-winrar-exploit](https://github.com/vilonachan/CVE-2023-38831-winrar-exploit)
 
 ### CVE-2023-38836 (2023-08-21)
 
@@ -16022,6 +16094,13 @@
 </code>
 
 - [jkroepke/CVE-2022-24348-2](https://github.com/jkroepke/CVE-2022-24348-2)
+
+### CVE-2022-24439 (2022-12-12)
+
+<code>All versions of package gitpython are vulnerable to Remote Code Execution (RCE) due to improper user input validation, which makes it possible to inject a maliciously crafted remote URL into the clone command. Exploiting this vulnerability is possible because the library makes external calls to git without sufficient sanitization of input arguments.
+</code>
+
+- [muhammadhendro/CVE-2022-24439](https://github.com/muhammadhendro/CVE-2022-24439)
 
 ### CVE-2022-24442 (2022-02-25)
 
@@ -24991,6 +25070,7 @@
 - [synacktiv/CVE-2021-40539](https://github.com/synacktiv/CVE-2021-40539)
 - [lpyzds/CVE-2021-40539](https://github.com/lpyzds/CVE-2021-40539)
 - [lpyydxs/CVE-2021-40539](https://github.com/lpyydxs/CVE-2021-40539)
+- [Bu0uCat/ADSelfService-Plus-RCE-CVE-2021-40539](https://github.com/Bu0uCat/ADSelfService-Plus-RCE-CVE-2021-40539)
 
 ### CVE-2021-40822 (2022-05-01)
 
@@ -25175,7 +25255,6 @@
 <code>Microsoft Exchange Server Spoofing Vulnerability
 </code>
 
-- [exploit-io/CVE-2021-41349](https://github.com/exploit-io/CVE-2021-41349)
 - [0xrobiul/CVE-2021-41349](https://github.com/0xrobiul/CVE-2021-41349)
 
 ### CVE-2021-41351 (2021-11-10)
@@ -25402,6 +25481,7 @@
 - [Zyx2440/Apache-HTTP-Server-2.4.50-RCE](https://github.com/Zyx2440/Apache-HTTP-Server-2.4.50-RCE)
 - [0xc4t/CVE-2021-41773](https://github.com/0xc4t/CVE-2021-41773)
 - [jkska23/Additive-Vulnerability-Analysis-CVE-2021-41773](https://github.com/jkska23/Additive-Vulnerability-Analysis-CVE-2021-41773)
+- [nwclasantha/Apache_2.4.29_Exploit](https://github.com/nwclasantha/Apache_2.4.29_Exploit)
 
 ### CVE-2021-41784 (2022-08-29)
 
@@ -26007,7 +26087,6 @@
 - [gps1949/CVE-2021-43798](https://github.com/gps1949/CVE-2021-43798)
 - [halencarjunior/grafana-CVE-2021-43798](https://github.com/halencarjunior/grafana-CVE-2021-43798)
 - [light-Life/CVE-2021-43798](https://github.com/light-Life/CVE-2021-43798)
-- [rnsss/CVE-2021-43798-poc](https://github.com/rnsss/CVE-2021-43798-poc)
 - [rodpwn/CVE-2021-43798-mass_scanner](https://github.com/rodpwn/CVE-2021-43798-mass_scanner)
 - [aymenbouferroum/CVE-2021-43798_exploit](https://github.com/aymenbouferroum/CVE-2021-43798_exploit)
 - [Jroo1053/GrafanaDirInclusion](https://github.com/Jroo1053/GrafanaDirInclusion)
@@ -29321,7 +29400,6 @@
 - [d3fudd/CVE-2020-9484_Exploit](https://github.com/d3fudd/CVE-2020-9484_Exploit)
 - [0dayCTF/CVE-2020-9484](https://github.com/0dayCTF/CVE-2020-9484)
 - [Disturbante/CVE-2020-9484](https://github.com/Disturbante/CVE-2020-9484)
-- [deathquote/CVE-2020-9484](https://github.com/deathquote/CVE-2020-9484)
 - [savsch/PoC_CVE-2020-9484](https://github.com/savsch/PoC_CVE-2020-9484)
 
 ### CVE-2020-9495 (2020-06-19)
@@ -45328,6 +45406,7 @@
 </code>
 
 - [heroku/heroku-CVE-2013-0269](https://github.com/heroku/heroku-CVE-2013-0269)
+- [danring/heroku-CVE-2013-0269](https://github.com/danring/heroku-CVE-2013-0269)
 
 ### CVE-2013-0303 (2014-03-23)
 
@@ -45667,6 +45746,8 @@
 - [suedadam/ntpscanner](https://github.com/suedadam/ntpscanner)
 - [sepehrdaddev/ntpdos](https://github.com/sepehrdaddev/ntpdos)
 - [0xhav0c/CVE-2013-5211](https://github.com/0xhav0c/CVE-2013-5211)
+- [requiempentest/-exploit-check-CVE-2013-5211](https://github.com/requiempentest/-exploit-check-CVE-2013-5211)
+- [requiempentest/NTP_CVE-2013-5211](https://github.com/requiempentest/NTP_CVE-2013-5211)
 
 ### CVE-2013-5664 (2013-08-31)
 
@@ -46286,6 +46367,7 @@
 - [chancej715/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution](https://github.com/chancej715/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution)
 - [FredBrave/CVE-2010-2075-UnrealIRCd-3.2.8.1](https://github.com/FredBrave/CVE-2010-2075-UnrealIRCd-3.2.8.1)
 - [JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution](https://github.com/JoseLRC97/UnrealIRCd-3.2.8.1-Backdoor-Command-Execution)
+- [nwclasantha/unreal_ircd_3281_backdoor_and_mitigation](https://github.com/nwclasantha/unreal_ircd_3281_backdoor_and_mitigation)
 
 ### CVE-2010-2387 (2012-12-21)
 
@@ -46759,13 +46841,6 @@
 </code>
 
 - [anthophilee/A2SV--SSL-VUL-Scan](https://github.com/anthophilee/A2SV--SSL-VUL-Scan)
-
-### CVE-2007-2426 (2007-05-02)
-
-<code>PHP remote file inclusion vulnerability in myfunctions/mygallerybrowser.php in the myGallery 1.4b4 and earlier plugin for WordPress allows remote attackers to execute arbitrary PHP code via a URL in the myPath parameter.
-</code>
-
-- [goudunz1/CVE-2007-2426](https://github.com/goudunz1/CVE-2007-2426)
 
 ### CVE-2007-2447 (2007-05-14)
 
@@ -47301,6 +47376,13 @@
 </code>
 
 - [alt3kx/CVE-2001-1442](https://github.com/alt3kx/CVE-2001-1442)
+
+### CVE-2001-1473 (2005-04-21)
+
+<code>The SSH-1 protocol allows remote servers to conduct man-in-the-middle attacks and replay a client challenge response to a target server by creating a Session ID that matches the Session ID of the target, but which uses a public key pair that is weaker than the target's public key, which allows the attacker to compute the corresponding private key and use the target's Session ID with the compromised key pair to masquerade as the target.
+</code>
+
+- [p1ton3rr/poc-cve-2001-1473](https://github.com/p1ton3rr/poc-cve-2001-1473)
 
 ### CVE-2001-3389
 - [becrevex/Gaston](https://github.com/becrevex/Gaston)
