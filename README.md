@@ -10772,6 +10772,7 @@
 - [oopnv70-lab/ghostlock-aak-apk](https://github.com/oopnv70-lab/ghostlock-aak-apk)
 - [lkeld/CVE-2026-43499-poc](https://github.com/lkeld/CVE-2026-43499-poc)
 - [Cxyofficial/K50G-POCOF4GT-CVE-2026-43499-PoC](https://github.com/Cxyofficial/K50G-POCOF4GT-CVE-2026-43499-PoC)
+- [dorlow/hazel-cve-2026-43499](https://github.com/dorlow/hazel-cve-2026-43499)
 
 ### CVE-2026-43500 (2026-05-11)
 
@@ -15034,6 +15035,7 @@
 - [UdinChan/cve-2026-82222-poc](https://github.com/UdinChan/cve-2026-82222-poc)
 - [dinosn/givewp-cve-2026-82222-rce-lab](https://github.com/dinosn/givewp-cve-2026-82222-rce-lab)
 - [R0x19/CVE-2026-82222](https://github.com/R0x19/CVE-2026-82222)
+- [0xCyp1337/CVE-2026-82222-MassExploit](https://github.com/0xCyp1337/CVE-2026-82222-MassExploit)
 
 ### CVE-2026-82286 (2026-08-28)
 
@@ -41509,6 +41511,7 @@
 - [Sornphut/CVE-2023-7028-GitLab](https://github.com/Sornphut/CVE-2023-7028-GitLab)
 - [szybnev/CVE-2023-7028](https://github.com/szybnev/CVE-2023-7028)
 - [KameliaZaman/Exploiting-GitLab-CVE-2023-7028](https://github.com/KameliaZaman/Exploiting-GitLab-CVE-2023-7028)
+- [FearThePLOTO/GitLab-CVE-2023-7028](https://github.com/FearThePLOTO/GitLab-CVE-2023-7028)
 
 ### CVE-2023-7172 (2023-12-30)
 
