@@ -552,6 +552,7 @@
 - [ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ninjazan420/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
 - [0x240x23elu/CVE-2026-1529](https://github.com/0x240x23elu/CVE-2026-1529)
 - [ackemed/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation](https://github.com/ackemed/CVE-2026-1529-PoC-keycloak-unauthorized-registration-via-improper-invitation-token-validation)
+- [0xlyvio/CVE-2026-1529-Keycloak-Exploit-Tool](https://github.com/0xlyvio/CVE-2026-1529-Keycloak-Exploit-Tool)
 
 ### CVE-2026-1555 (2026-04-15)
 
@@ -3903,6 +3904,7 @@
 - [alt3kx/CVE-2026-18963](https://github.com/alt3kx/CVE-2026-18963)
 - [M4xSec/My-Exploits](https://github.com/M4xSec/My-Exploits)
 - [EQSTLab/CVE-2026-18963](https://github.com/EQSTLab/CVE-2026-18963)
+- [0xlyvio/CVE-2026-18963-keycloak](https://github.com/0xlyvio/CVE-2026-18963-keycloak)
 
 ### CVE-2026-19193 (2026-08-07)
 
@@ -3987,6 +3989,7 @@
 - [ksotaria1337/CVE-2026-19598](https://github.com/ksotaria1337/CVE-2026-19598)
 - [DeadExpl0it/CVE-2026-19598-PoC](https://github.com/DeadExpl0it/CVE-2026-19598-PoC)
 - [sag-asab/CVE-2026-19598](https://github.com/sag-asab/CVE-2026-19598)
+- [0xCyp1337/CVE-2026-19598-](https://github.com/0xCyp1337/CVE-2026-19598-)
 
 ### CVE-2026-19626 (2026-08-14)
 
@@ -6781,6 +6784,7 @@
 </code>
 
 - [0xBlackash/CVE-2026-27876](https://github.com/0xBlackash/CVE-2026-27876)
+- [atiilla/CVE-2026-27876](https://github.com/atiilla/CVE-2026-27876)
 
 ### CVE-2026-27884 (2026-02-26)
 
@@ -6997,6 +7001,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-28956](https://github.com/HORKimhab/CVE-2026-28956)
+- [eddinos2/CVE-2026-28956-jxl-messages-surface](https://github.com/eddinos2/CVE-2026-28956-jxl-messages-surface)
 
 ### CVE-2026-28990 (2026-05-11)
 
@@ -13828,6 +13833,13 @@
 
 - [oscerd/CVE-2026-64640](https://github.com/oscerd/CVE-2026-64640)
 
+### CVE-2026-64705 (2026-08-25)
+
+<code>A buffer overflow was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.7.7, macOS Sonoma 14.8.7. An app may be able to cause unexpected system termination or write kernel memory.
+</code>
+
+- [eddinos2/CVE-2026-64705](https://github.com/eddinos2/CVE-2026-64705)
+
 ### CVE-2026-64725 (2026-07-27)
 
 <code>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 18.7.10 and iPadOS 18.7.10, iOS 26.6 and iPadOS 26.6, macOS Sequoia 15.7.8, macOS Sonoma 14.8.8, macOS Tahoe 26.6, tvOS 26.6, visionOS 26.6, watchOS 26.6. An app may be able to cause a denial-of-service.
@@ -13841,6 +13853,7 @@
 </code>
 
 - [yiyeshi0-hash/ave263-chain](https://github.com/yiyeshi0-hash/ave263-chain)
+- [eddinos2/CVE-2026-64747](https://github.com/eddinos2/CVE-2026-64747)
 
 ### CVE-2026-64788 (2026-08-17)
 
@@ -14644,6 +14657,7 @@
 - [gabrielunknown/CVE-2026-73570](https://github.com/gabrielunknown/CVE-2026-73570)
 - [INFOKOM-KI/Zimbra-CVE-2026-73570-Rules](https://github.com/INFOKOM-KI/Zimbra-CVE-2026-73570-Rules)
 - [dahnutz/zimbra-cve-2026-73570-ir](https://github.com/dahnutz/zimbra-cve-2026-73570-ir)
+- [juanpoch/CVE-2026-73570](https://github.com/juanpoch/CVE-2026-73570)
 
 ### CVE-2026-73633 (2026-08-14)
 
@@ -14960,6 +14974,13 @@
 </code>
 
 - [vxssroott/CVE-2026-78906-ChatGPT-Prompt-Injection](https://github.com/vxssroott/CVE-2026-78906-ChatGPT-Prompt-Injection)
+
+### CVE-2026-78938 (2026-08-25)
+
+<code>Type confusion in V8 in Google Chrome prior to 152.0.7977.65 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)
+</code>
+
+- [eddinos2/CVE-2026-78938](https://github.com/eddinos2/CVE-2026-78938)
 
 ### CVE-2026-79266 (2026-08-25)
 
@@ -16611,7 +16632,6 @@
 - [phamdinhquy2512/CVE-2025-6019-Exploitation](https://github.com/phamdinhquy2512/CVE-2025-6019-Exploitation)
 - [0x5chltz/CVE-2025-6019](https://github.com/0x5chltz/CVE-2025-6019)
 - [symphony2colour/CVE-2025-6019-udisks-lpe-no-image](https://github.com/symphony2colour/CVE-2025-6019-udisks-lpe-no-image)
-- [boboaung1337/CVE-2025-6019](https://github.com/boboaung1337/CVE-2025-6019)
 - [tr3m0x/CVE-2025-6019](https://github.com/tr3m0x/CVE-2025-6019)
 - [JM00NJ/CVE-2025-6019-udisks2-XFS-Resize-TOCTOU-Privilege-Escalation](https://github.com/JM00NJ/CVE-2025-6019-udisks2-XFS-Resize-TOCTOU-Privilege-Escalation)
 
@@ -19442,6 +19462,7 @@
 - [MatheuZSecurity/Exploit-CVE-2025-24799](https://github.com/MatheuZSecurity/Exploit-CVE-2025-24799)
 - [Rosemary1337/CVE-2025-24799](https://github.com/Rosemary1337/CVE-2025-24799)
 - [airbus-cert/CVE-2025-24799-scanner](https://github.com/airbus-cert/CVE-2025-24799-scanner)
+- [galisko/CVE-2025-24799](https://github.com/galisko/CVE-2025-24799)
 
 ### CVE-2025-24801 (2025-03-18)
 
@@ -27713,6 +27734,7 @@
 - [azilRababe/CVE-2025-68613](https://github.com/azilRababe/CVE-2025-68613)
 - [qianlijaingshan/n8n-cve-2026-21858](https://github.com/qianlijaingshan/n8n-cve-2026-21858)
 - [Giangdurian/CVE-2026-21858-and-CVE-2025-68613](https://github.com/Giangdurian/CVE-2026-21858-and-CVE-2025-68613)
+- [rmhowe425/POC-CVE-2025-68613](https://github.com/rmhowe425/POC-CVE-2025-68613)
 
 ### CVE-2025-68616 (2026-01-19)
 
@@ -57433,6 +57455,9 @@
 - [qiezi-maozi/CVE-2021-3019-Lanproxy](https://github.com/qiezi-maozi/CVE-2021-3019-Lanproxy)
 - [a1665454764/CVE-2021-3019](https://github.com/a1665454764/CVE-2021-3019)
 
+### CVE-2021-3030
+- [athosgonzaga/CVE-2021-3030](https://github.com/athosgonzaga/CVE-2021-3030)
+
 ### CVE-2021-3060 (2021-11-10)
 
 <code>An OS command injection vulnerability in the Simple Certificate Enrollment Protocol (SCEP) feature of PAN-OS software allows an unauthenticated network-based attacker with specific knowledge of the firewall configuration to execute arbitrary code with root user privileges. The attacker must have network access to the GlobalProtect interfaces to exploit this issue. This issue impacts: PAN-OS 8.1 versions earlier than PAN-OS 8.1.20-h1; PAN-OS 9.0 versions earlier than PAN-OS 9.0.14-h3; PAN-OS 9.1 versions earlier than PAN-OS 9.1.11-h2; PAN-OS 10.0 versions earlier than PAN-OS 10.0.8; PAN-OS 10.1 versions earlier than PAN-OS 10.1.3. Prisma Access customers with Prisma Access 2.1 Preferred and Prisma Access 2.1 Innovation firewalls are impacted by this issue.
@@ -65214,6 +65239,13 @@
 - [MBHudson/CVE-2020-1971](https://github.com/MBHudson/CVE-2020-1971)
 - [honeyvig/CVE-2020-1971](https://github.com/honeyvig/CVE-2020-1971)
 
+### CVE-2020-2021 (2020-06-29)
+
+<code>When Security Assertion Markup Language (SAML) authentication is enabled and the 'Validate Identity Provider Certificate' option is disabled (unchecked), improper verification of signatures in PAN-OS SAML authentication enables an unauthenticated network-based attacker to access protected resources. The attacker must have network access to the vulnerable server to exploit this vulnerability. This issue affects PAN-OS 9.1 versions earlier than PAN-OS 9.1.3; PAN-OS 9.0 versions earlier than PAN-OS 9.0.9; PAN-OS 8.1 versions earlier than PAN-OS 8.1.15, and all versions of PAN-OS 8.0 (EOL). This issue does not affect PAN-OS 7.1. This issue cannot be exploited if SAML is not used for authentication. This issue cannot be exploited if the 'Validate Identity Provider Certificate' option is enabled (checked) in the SAML Identity Provider Server Profile. Resources that can be protected by SAML-based single sign-on (SSO) authentication are: GlobalProtect Gateway, GlobalProtect Portal, GlobalProtect Clientless VPN, Authentication and Captive Portal, PAN-OS next-generation firewalls (PA-Series, VM-Series) and Panorama web interfaces, Prisma Access In the case of GlobalProtect Gateways, GlobalProtect Portal, Clientless VPN, Captive Portal, and Prisma Access, an unauthenticated attacker with network access to the affected servers can gain access to protected resources if allowed by configured authentication and Security policies. There is no impact on the integrity and availability of the gateway, portal or VPN server. An attacker cannot inspect or tamper with sessions of regular users. In the worst case, this is a critical severity vulnerability with a CVSS Base Score of 10.0 (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N). In the case of PAN-OS and Panorama web interfaces, this issue allows an unauthenticated attacker with network access to the PAN-OS or Panorama web interfaces to log in as an administrator and perform administrative actions. In the worst-case scenario, this is a critical severity vulnerability with a CVSS Base Score of 10.0 (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H). If the web interfaces are only accessible to a restricted management network, then the issue is lowered to a CVSS Base Score of 9.6 (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H). Palo Alto Networks is not aware of any malicious attempts to exploit this vulnerability.
+</code>
+
+- [mngunibanda1-prog/Jozini-network-scanner](https://github.com/mngunibanda1-prog/Jozini-network-scanner)
+
 ### CVE-2020-2023 (2020-06-10)
 
 <code>Kata Containers doesn't restrict containers from accessing the guest's root filesystem device. Malicious containers can exploit this to gain code execution on the guest and masquerade as the kata-agent. This issue affects Kata Containers 1.11 versions earlier than 1.11.1; Kata Containers 1.10 versions earlier than 1.10.5; and Kata Containers 1.9 and earlier versions.
@@ -66825,6 +66857,7 @@
 </code>
 
 - [ColdFusionX/Keycloak-12.0.1-CVE-2020-10770](https://github.com/ColdFusionX/Keycloak-12.0.1-CVE-2020-10770)
+- [0xlyvio/CVE-2020-10770-keycloak-exploit-poc](https://github.com/0xlyvio/CVE-2020-10770-keycloak-exploit-poc)
 
 ### CVE-2020-10882 (2020-03-25)
 
@@ -82273,8 +82306,8 @@
 <code>Directory traversal vulnerability in the Elegant Themes Divi theme for WordPress allows remote attackers to read arbitrary files via a .. (dot dot) in the img parameter in a revslider_show_image action to wp-admin/admin-ajax.php.  NOTE: this vulnerability may be a duplicate of CVE-2014-9734.
 </code>
 
-- [paralelo14/WordPressMassExploiter](https://github.com/paralelo14/WordPressMassExploiter)
-- [paralelo14/CVE-2015-1579](https://github.com/paralelo14/CVE-2015-1579)
+- [dmonst3r/WordPressMassExploiter](https://github.com/dmonst3r/WordPressMassExploiter)
+- [dmonst3r/CVE-2015-1579](https://github.com/dmonst3r/CVE-2015-1579)
 
 ### CVE-2015-1592 (2015-02-19)
 
@@ -83042,7 +83075,7 @@
 - [RobinHoutevelts/Joomla-CVE-2015-8562-PHP-POC](https://github.com/RobinHoutevelts/Joomla-CVE-2015-8562-PHP-POC)
 - [atcasanova/cve-2015-8562-exploit](https://github.com/atcasanova/cve-2015-8562-exploit)
 - [thejackerz/scanner-exploit-joomla-CVE-2015-8562](https://github.com/thejackerz/scanner-exploit-joomla-CVE-2015-8562)
-- [paralelo14/CVE-2015-8562](https://github.com/paralelo14/CVE-2015-8562)
+- [dmonst3r/CVE-2015-8562](https://github.com/dmonst3r/CVE-2015-8562)
 - [VoidSec/Joomla_CVE-2015-8562](https://github.com/VoidSec/Joomla_CVE-2015-8562)
 - [xnorkl/Joomla_Payload](https://github.com/xnorkl/Joomla_Payload)
 - [guanjivip/CVE-2015-8562](https://github.com/guanjivip/CVE-2015-8562)
