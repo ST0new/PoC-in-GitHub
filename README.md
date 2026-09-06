@@ -1862,6 +1862,7 @@
 - [zycoder0day/CVE-2026-6279](https://github.com/zycoder0day/CVE-2026-6279)
 - [87achrafg-stack/CVE-2026-6279.py](https://github.com/87achrafg-stack/CVE-2026-6279.py)
 - [87achrafg-stack/CVE-2026-6279](https://github.com/87achrafg-stack/CVE-2026-6279)
+- [katranSefa/CVE-2026-6279](https://github.com/katranSefa/CVE-2026-6279)
 
 ### CVE-2026-6300 (2026-04-15)
 
@@ -4064,6 +4065,7 @@
 </code>
 
 - [HORKimhab/CVE-2026-19949](https://github.com/HORKimhab/CVE-2026-19949)
+- [katranSefa/CVE-2026-19949](https://github.com/katranSefa/CVE-2026-19949)
 
 ### CVE-2026-20045 (2026-01-21)
 
@@ -12181,6 +12183,7 @@
 - [izxci/CVE-2026-49777](https://github.com/izxci/CVE-2026-49777)
 - [xxconi/CVE-2026-49777-CVE-2026-10735](https://github.com/xxconi/CVE-2026-49777-CVE-2026-10735)
 - [HORKimhab/CVE-Wordpress](https://github.com/HORKimhab/CVE-Wordpress)
+- [katranSefa/CVE-2026-49777](https://github.com/katranSefa/CVE-2026-49777)
 
 ### CVE-2026-49844 (2026-07-10)
 
@@ -14239,6 +14242,13 @@
 
 - [anirbala98/CVE-2026-67206](https://github.com/anirbala98/CVE-2026-67206)
 
+### CVE-2026-67276 (2026-09-05)
+
+<code>RouterOS does not compare the complete RSA public key when matching an SSH authentication request to an authorized user key, checking the key type and modulus but omitting the exponent. Because signature verification uses the client-supplied key, an attacker knowing an authorized RSA modulus can supply a key with exponent one, forge a valid signature, and open an SSH command channel as the target user without the private key.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)
+</code>
+
+- [dinosn/mikrotrick-poc](https://github.com/dinosn/mikrotrick-poc)
+
 ### CVE-2026-67340 (2026-08-01)
 
 <code>ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authenticated user with UPDATE_SCHEMA permission can create a JavaScript trigger that invokes java.lang.Runtime.getRuntime().exec() (or ProcessBuilder), achieving OS command execution when the trigger fires.
@@ -14947,6 +14957,9 @@
 </code>
 
 - [nabeelmkhan/CVE-2026-78839](https://github.com/nabeelmkhan/CVE-2026-78839)
+
+### CVE-2026-78851
+- [SLO-CYBER-SEC/CVE-2026-78851](https://github.com/SLO-CYBER-SEC/CVE-2026-78851)
 
 ### CVE-2026-78903 (2026-08-25)
 
@@ -29059,7 +29072,7 @@
 - [c0d3zilla/CVE-2024-2876](https://github.com/c0d3zilla/CVE-2024-2876)
 - [chsxthwik/CVE-2024-2876](https://github.com/chsxthwik/CVE-2024-2876)
 - [0xAgun/CVE-2024-2876](https://github.com/0xAgun/CVE-2024-2876)
-- [kernel364/CVE-2024-2876](https://github.com/kernel364/CVE-2024-2876)
+- [aerchy/CVE-2024-2876](https://github.com/aerchy/CVE-2024-2876)
 
 ### CVE-2024-2879 (2024-04-03)
 
@@ -30446,7 +30459,7 @@
 
 - [rxerium/CVE-2024-7593](https://github.com/rxerium/CVE-2024-7593)
 - [D3N14LD15K/CVE-2024-7593_PoC_Exploit](https://github.com/D3N14LD15K/CVE-2024-7593_PoC_Exploit)
-- [kernel364/CVE-2024-7593](https://github.com/kernel364/CVE-2024-7593)
+- [aerchy/CVE-2024-7593](https://github.com/aerchy/CVE-2024-7593)
 
 ### CVE-2024-7595 (2025-02-05)
 
@@ -33310,7 +33323,6 @@
 - [LuisMateo1/Arbitrary-File-Read-CVE-2024-24919](https://github.com/LuisMateo1/Arbitrary-File-Read-CVE-2024-24919)
 - [AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-](https://github.com/AhmedMansour93/Event-ID-263-Rule-Name-SOC287---Arbitrary-File-Read-on-Checkpoint-Security-Gateway-CVE-2024-24919-)
 - [geniuszly/CVE-2024-24919](https://github.com/geniuszly/CVE-2024-24919)
-- [kernel364/CVE-2024-24919](https://github.com/kernel364/CVE-2024-24919)
 - [sar-3mar/CVE-2024-24919_POC](https://github.com/sar-3mar/CVE-2024-24919_POC)
 - [NingXin2002/Check-Point_poc](https://github.com/NingXin2002/Check-Point_poc)
 - [hashdr1ft/SOC_287](https://github.com/hashdr1ft/SOC_287)
@@ -34338,7 +34350,7 @@
 - [NanoWraith/CVE-2024-29973](https://github.com/NanoWraith/CVE-2024-29973)
 - [p0et08/CVE-2024-29973](https://github.com/p0et08/CVE-2024-29973)
 - [RevoltSecurities/CVE-2024-29973](https://github.com/RevoltSecurities/CVE-2024-29973)
-- [kernel364/CVE-2024-29973](https://github.com/kernel364/CVE-2024-29973)
+- [aerchy/CVE-2024-29973](https://github.com/aerchy/CVE-2024-29973)
 
 ### CVE-2024-29988 (2024-04-09)
 
@@ -35853,6 +35865,8 @@
 - [arrhenius975/CVE-2024-38063-Exploit-Refactoring](https://github.com/arrhenius975/CVE-2024-38063-Exploit-Refactoring)
 - [SALMA-ESSAOUD/CVE-CVSS--CVE-2024-38063-IPv6-TCP-IP-Remote-Code-Execution-Analysis](https://github.com/SALMA-ESSAOUD/CVE-CVSS--CVE-2024-38063-IPv6-TCP-IP-Remote-Code-Execution-Analysis)
 - [RohitMalik7/cve-2024-38063-detection-mitigation-system](https://github.com/RohitMalik7/cve-2024-38063-detection-mitigation-system)
+- [Mayank637-pixel/CVE-2024-38063](https://github.com/Mayank637-pixel/CVE-2024-38063)
+- [hibaNITT/CVE-2024-38063](https://github.com/hibaNITT/CVE-2024-38063)
 
 ### CVE-2024-38077 (2024-07-09)
 
