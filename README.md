@@ -3906,6 +3906,7 @@
 - [M4xSec/My-Exploits](https://github.com/M4xSec/My-Exploits)
 - [EQSTLab/CVE-2026-18963](https://github.com/EQSTLab/CVE-2026-18963)
 - [0xlyvio/CVE-2026-18963-keycloak](https://github.com/0xlyvio/CVE-2026-18963-keycloak)
+- [ynsmroztas/KeySniper](https://github.com/ynsmroztas/KeySniper)
 
 ### CVE-2026-19193 (2026-08-07)
 
@@ -9694,6 +9695,7 @@
 </code>
 
 - [abhayclasher/CVE-2026-39866](https://github.com/abhayclasher/CVE-2026-39866)
+- [pvharmo2/gha-lab-360f77d0d4](https://github.com/pvharmo2/gha-lab-360f77d0d4)
 
 ### CVE-2026-39875 (2026-07-27)
 
@@ -10950,6 +10952,7 @@
 </code>
 
 - [Virgula0/CVE-2026-44402](https://github.com/Virgula0/CVE-2026-44402)
+- [0xCyp1337/CVE-2026-44402](https://github.com/0xCyp1337/CVE-2026-44402)
 
 ### CVE-2026-44403 (2026-05-12)
 
@@ -14957,6 +14960,9 @@
 </code>
 
 - [nabeelmkhan/CVE-2026-78839](https://github.com/nabeelmkhan/CVE-2026-78839)
+
+### CVE-2026-78850
+- [SLO-CYBER-SEC/CVE-2026-78850](https://github.com/SLO-CYBER-SEC/CVE-2026-78850)
 
 ### CVE-2026-78851
 - [SLO-CYBER-SEC/CVE-2026-78851](https://github.com/SLO-CYBER-SEC/CVE-2026-78851)
@@ -21332,6 +21338,7 @@
 - [vpr-labs/CVE-2025-32463](https://github.com/vpr-labs/CVE-2025-32463)
 - [danilo1992-sys/CVE-2025-32463](https://github.com/danilo1992-sys/CVE-2025-32463)
 - [0xBlackash/CVE-2025-32463](https://github.com/0xBlackash/CVE-2025-32463)
+- [EthanEvans92/CVE-2025-32463](https://github.com/EthanEvans92/CVE-2025-32463)
 - [Fomovet/cve-2025-32463](https://github.com/Fomovet/cve-2025-32463)
 - [0xdak/CVE-2025-32463_exploit](https://github.com/0xdak/CVE-2025-32463_exploit)
 
@@ -63651,6 +63658,7 @@
 - [Jiahong-Guan/log4j-shell-poc](https://github.com/Jiahong-Guan/log4j-shell-poc)
 - [Vaibhav91one/log4shell-cve-lab](https://github.com/Vaibhav91one/log4shell-cve-lab)
 - [14free/log4j2-vuln-lab](https://github.com/14free/log4j2-vuln-lab)
+- [Wafeeq-Fareed/log4shell-exploitation-lab](https://github.com/Wafeeq-Fareed/log4shell-exploitation-lab)
 
 ### CVE-2021-44255 (2022-01-31)
 
