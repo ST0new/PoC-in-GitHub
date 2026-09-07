@@ -10074,6 +10074,13 @@
 - [4chech/CVE-2026-41242](https://github.com/4chech/CVE-2026-41242)
 - [Giangdurian/CVE-2026-41242](https://github.com/Giangdurian/CVE-2026-41242)
 
+### CVE-2026-41249 (2026-06-04)
+
+<code>CoreShop is a Pimcore enhanced eCommerce solution. In versions 5.0.1 through 5.1.0-beta.1,, the GitHub Actions workflow (`.github/workflows/static.yml`) uses the `pull_request_target` trigger but dangerously checks out the unverified code from the pull request head (`ref: ${{ github.event.pull_request.head.ref }}`). Subsequently, it executes a script (`bin/console`) from this untrusted checkout. This allows any external attacker to achieve Remote Code Execution (RCE) on the GitHub Actions runner simply by submitting a malicious Pull Request. Also known as a &quot;Pwn Request&quot; vulnerability. As of time of publication, `pull_request_target` is still in the file.
+</code>
+
+- [pvharmo2/gha-lab-5bce203f66](https://github.com/pvharmo2/gha-lab-5bce203f66)
+
 ### CVE-2026-41285 (2026-04-20)
 
 <code>In OpenBSD through 7.8, the slaacd and rad daemons have an infinite loop when they receive a crafted ICMPv6 Neighbor Discovery (ND) option (over a local network) with length zero, because of an &quot;nd_opt_len * 8 - 2&quot; expression with no preceding check for whether nd_opt_len is zero.
@@ -10094,6 +10101,13 @@
 </code>
 
 - [kaleth4/CVE-2026-41303](https://github.com/kaleth4/CVE-2026-41303)
+
+### CVE-2026-41414 (2026-04-24)
+
+<code>Skim is a fuzzy finder designed to through files, lines, and commands. The generate-files job in .github/workflows/pr.yml checks out attacker-controlled fork code and executes it via cargo run, with access to SKIM_RS_BOT_PRIVATE_KEY and GITHUB_TOKEN (contents:write). No gates prevent exploitation - any GitHub user can trigger this by opening a pull request from a fork. This vulnerability is fixed with commit bf63404ad51985b00ed304690ba9d477860a5a75.
+</code>
+
+- [pvharmo2/gha-lab-456dd8a245](https://github.com/pvharmo2/gha-lab-456dd8a245)
 
 ### CVE-2026-41452 (2026-08-03)
 
@@ -10399,6 +10413,13 @@
 
 - [Astaruf/CVE-2026-42281](https://github.com/Astaruf/CVE-2026-42281)
 
+### CVE-2026-42298 (2026-05-08)
+
+<code>Postiz is an AI social media scheduling tool. Prior to commit da44801, a &quot;Pwn Request&quot; vulnerability in the Build and Publish PR Docker Image workflow (.github/workflows/pr-docker-build.yml) allows any unauthenticated user to execute arbitrary code during the Docker build process and exfiltrate a highly privileged GITHUB_TOKEN (write-all permissions). This can be achieved simply by opening a Pull Request from a fork with a maliciously modified Dockerfile.dev. This issue has been patched via commit da44801.
+</code>
+
+- [pvharmo2/gha-lab-677752506e](https://github.com/pvharmo2/gha-lab-677752506e)
+
 ### CVE-2026-42527 (2026-07-06)
 
 <code>Deserialization of Untrusted Data vulnerability in Apache Camel.\n\nThe default ObjectInputFilter pattern shipped with several Apache Camel components for defense-in-depth deserialization filtering ('java.**;javax.**;org.apache.camel.**;!*', or the no-'javax.**' variant in the aggregation-repository components) uses a recursive 'java.**' glob that admits classes whose hashCode/equals/readObject methods perform network I/O, notably java.net.URL and java.net.InetAddress. When an attacker can deliver a Java-serialized payload to an affected Camel consumer, deserialization of a HashMap (or any collection that calls hashCode on its elements) containing java.net.URL keys causes the JVM to issue DNS queries to the attacker-supplied host during the deserialization side-effect. The class-level filter check passes because the resulting object's class (HashMap) is allow-listed; the DNS query is observable on an attacker-controlled DNS server, providing an out-of-band side channel. The exposure is highest on the camel-jms family because JmsBinding.extractBodyFromJms invokes ObjectMessage.getObject() unconditionally when mapJmsMessage=true (default). Affected components: camel-jms, camel-sjms, camel-amqp, camel-mina, camel-netty, camel-netty-http, camel-vertx-http, camel-infinispan, and the aggregation repository components camel-leveldb, camel-cassandraql, camel-consul, camel-sql (JDBC aggregation repository).\nThis issue affects Apache Camel: from 4.14.0 before 4.14.8, from 4.15.0 before 4.18.3, from 4.19.0 before 4.21.0.\n\nUsers are recommended to upgrade to a version that contains the CAMEL-23372 fix once available: 4.21.0 for the 4.21.x line, 4.18.3 for the 4.18.x line, and 4.14.8 for the 4.14.x line. For deployments that cannot upgrade immediately, configure a JMS-provider-side allow-list (Apache ActiveMQ Artemis 'deserializationAllowList' / 'deserializationDenyList', Apache ActiveMQ Classic 'org.apache.activemq.SERIALIZABLE_PACKAGES') as the primary mitigation, and/or override the in-code default via the endpoint-level 'deserializationFilter' option or the JVM-wide '-Djdk.serialFilter' system property with an explicit deny: '!java.net.**;java.**;javax.**;org.apache.camel.**;!*' (or '!java.net.**;java.**;org.apache.camel.**;!*' for the aggregation-repository components, which do not include javax.**).
@@ -10431,6 +10452,13 @@
 - [0xCyberstan/CVE-2026-42533-POC](https://github.com/0xCyberstan/CVE-2026-42533-POC)
 - [Leeyoonjoo/CVE-2026-42533](https://github.com/Leeyoonjoo/CVE-2026-42533)
 - [FranklinF25/cve-2026-42533](https://github.com/FranklinF25/cve-2026-42533)
+
+### CVE-2026-42559 (2026-05-14)
+
+<code>RMCP is an official Rust SDK for the Model Context Protocol. Prior to version 1.4.0, the rmcp crate's Streamable HTTP server transport (crates/rmcp/src/transport/streamable_http_server/) did not validate the incoming Host header. This allowed a malicious public website, via a DNS rebinding attack, to send authenticated requests to an MCP server running on the victim's loopback or private-network interface. This vulnerability is fixed in 1.4.0.
+</code>
+
+- [joaovicdev/CVE-2026-42559](https://github.com/joaovicdev/CVE-2026-42559)
 
 ### CVE-2026-42568 (2026-06-10)
 
@@ -10916,6 +10944,13 @@
 
 - [Alardiians/pocketbase-CVE-2026-44166](https://github.com/Alardiians/pocketbase-CVE-2026-44166)
 
+### CVE-2026-44246 (2026-05-12)
+
+<code>nnU-Net is a semantic segmentation framework that automatically adapts its pipeline to a dataset. Prior to 2.4.1, the nnU-Net Issue Triage workflow in .github/workflows/issue-triage.yml is vulnerable to Agentic Workflow Injection. The workflow sets allowed_non_write_users: ${{ github.event.issue.user.login }}, which means any logged-in GitHub user who opens an issue can reach this agentic workflow with attacker-controlled content. Untrusted issue title and body content are embedded directly into the prompt of anthropics/claude-code-action, and the workflow then runs a command-capable Claude agent with permission to comment on and relabel the current issue via gh. Because this workflow is triggered automatically on issues.opened, an external attacker can submit a crafted issue that steers the agent beyond its intended issue-triage purpose and influences authenticated issue actions. This vulnerability is fixed in 2.4.1.
+</code>
+
+- [pvharmo2/gha-lab-733c168b88](https://github.com/pvharmo2/gha-lab-733c168b88)
+
 ### CVE-2026-44262 (2026-05-12)
 
 <code>Scramble generates API documentation for Laravel project. From 0.13.2 to before 0.13.22, when documentation endpoints are publicly accessible and validation rules reference user-controlled input, request supplied data may be evaluated during documentation generation, leading to execution of arbitrary PHP code in the application context. This vulnerability is fixed in 0.13.22.
@@ -10976,6 +11011,7 @@
 - [dinosn/CVE-2026-44578](https://github.com/dinosn/CVE-2026-44578)
 - [0xBlackash/CVE-2026-44578](https://github.com/0xBlackash/CVE-2026-44578)
 - [lxxexxbxx/CVE-2026-44578](https://github.com/lxxexxbxx/CVE-2026-44578)
+- [isaca0315/CVE-2026-44578-next-js-ssrf](https://github.com/isaca0315/CVE-2026-44578-next-js-ssrf)
 
 ### CVE-2026-44579 (2026-05-13)
 
@@ -13885,6 +13921,7 @@
 - [codeb0ssx/CVE-2026-64849-PoC](https://github.com/codeb0ssx/CVE-2026-64849-PoC)
 - [BiuTrap/CVE-2026-64849](https://github.com/BiuTrap/CVE-2026-64849)
 - [zavisco/CVE-2026-64849.yaml](https://github.com/zavisco/CVE-2026-64849.yaml)
+- [isaca0315/CVE-2026-64849-poc-lab](https://github.com/isaca0315/CVE-2026-64849-poc-lab)
 
 ### CVE-2026-65008 (2026-07-21)
 
@@ -20979,6 +21016,7 @@
 - [antichainalysis/sap-netweaver-0day-CVE-2025-31324](https://github.com/antichainalysis/sap-netweaver-0day-CVE-2025-31324)
 - [harshitvarma05/CVE-2025-31324-Exploits](https://github.com/harshitvarma05/CVE-2025-31324-Exploits)
 - [aristois913/CVE-2025-31324](https://github.com/aristois913/CVE-2025-31324)
+- [HKenzoKimura/CVE-2025-31324](https://github.com/HKenzoKimura/CVE-2025-31324)
 
 ### CVE-2025-31336
 - [coleleavitt/AAMVA-PDF417-Vulnerability-Research](https://github.com/coleleavitt/AAMVA-PDF417-Vulnerability-Research)
@@ -24848,6 +24886,7 @@
 - [Mr-Destroyer/CVE-2025-55182](https://github.com/Mr-Destroyer/CVE-2025-55182)
 - [UwUGreed/CVE-2025-55182-poc](https://github.com/UwUGreed/CVE-2025-55182-poc)
 - [ChrisBarack/cve-2025-55182](https://github.com/ChrisBarack/cve-2025-55182)
+- [Bluex707/React2Shell-CVE-2025-55182-Exploit](https://github.com/Bluex707/React2Shell-CVE-2025-55182-Exploit)
 
 ### CVE-2025-55183 (2025-12-11)
 
@@ -25545,6 +25584,7 @@
 - [Neobee714/CVE-2025-57819-POC](https://github.com/Neobee714/CVE-2025-57819-POC)
 - [TeteREN/CVE-2025-57819-RCE](https://github.com/TeteREN/CVE-2025-57819-RCE)
 - [DiegoRivas1/htb-labs-connected](https://github.com/DiegoRivas1/htb-labs-connected)
+- [r3vpwnx/CVE-2025-57819](https://github.com/r3vpwnx/CVE-2025-57819)
 
 ### CVE-2025-57833 (2025-09-03)
 
@@ -30497,6 +30537,9 @@
 </code>
 
 - [lfillaz/CVE-2024-7703](https://github.com/lfillaz/CVE-2024-7703)
+
+### CVE-2024-7804
+- [joaovicdev/CVE-2024-7804](https://github.com/joaovicdev/CVE-2024-7804)
 
 ### CVE-2024-7808 (2024-08-15)
 
@@ -57295,6 +57338,7 @@
 - [DLL00P/CVE-2021-1675](https://github.com/DLL00P/CVE-2021-1675)
 - [ccordeiro/CVE-2021-1675](https://github.com/ccordeiro/CVE-2021-1675)
 - [VelesSecurity/CVE-2021-1675-PrintNightmare-Analysis](https://github.com/VelesSecurity/CVE-2021-1675-PrintNightmare-Analysis)
+- [HKenzoKimura/CVE-2021-1675](https://github.com/HKenzoKimura/CVE-2021-1675)
 
 ### CVE-2021-1678 (2021-01-12)
 
@@ -58158,6 +58202,7 @@
 - [mac3d0/CVE-2021-4034-pwnkit](https://github.com/mac3d0/CVE-2021-4034-pwnkit)
 - [krleejihyeong/WHS4_CVE-2021-4034](https://github.com/krleejihyeong/WHS4_CVE-2021-4034)
 - [nicoibarburu/CVE-2021-4034](https://github.com/nicoibarburu/CVE-2021-4034)
+- [iurhfiu6/CVE-2021-4034](https://github.com/iurhfiu6/CVE-2021-4034)
 
 ### CVE-2021-4043 (2022-02-04)
 
